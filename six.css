@@ -1,0 +1,143 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(21, 21, 71);
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "image content";
+    background-color: rgb(28, 28, 58);
+}
+.picture{
+    grid-area: image;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 6vh;
+   
+  
+}
+.picture img{
+    height: 100vh;
+    width: 48vw;
+    border-radius: 7%;
+   
+}
+.things {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(158, 181, 181, 0.756);
+    border: 3px ; /* Specify a color for the border */
+    border-radius: 30px;
+    margin: 40px;
+    padding: 3px 150px;
+}
+
+.things img {
+    width: 20%; /* Adjust the width based on your preference */
+    min-width: 15opx;
+    max-width: 30%; /* Set a maximum width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 50%;
+    margin-bottom: 10px; /* Add some spacing between the image and text */
+}
+
+.things a {
+    font-size: 1.1em; /* Adjust font size */
+    color: azure;
+    text-decoration: none;
+    text-align: center; /* Center the text */
+    padding-left: 10px;
+}
+
+.content{
+    margin-top: 11vh;
+    margin-bottom: 20vh;
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    padding-bottom: 10%;
+    
+    align-items: center;
+    color: aliceblue;
+}
+
+
+   
+   
+
+.name ,.mail,.password {
+    font-size: 3vh;
+    display: grid;
+    gap :2px;
+    padding-bottom: 3%;
+}
+.put{
+display: block;
+height: 5.5vh;
+width: auto;
+border-radius: 20px;
+color: rgb(201, 210, 210);
+background-color: rgb(28, 28, 58);
+border: 2px solid yellowgreen   ;
+
+
+
+}
+::placeholder{
+    color: rgb(206, 212, 212);
+}
+.Account input{
+    background-color: rgba(81, 81, 174, 0.747);
+    height: 6vh;
+    width: 18vh;
+    border-radius: 14px;
+    color: beige;
+    font-weight: 800;
+    margin-bottom: 7%;
+}
+.sign p{
+    display: inline;
+    color: rgba(196, 255, 233, 0.756);
+    font-weight: 500;
+    font-size: 110%;
+}
+.sign a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: 500;
+    font-size: 110%;
+}
+.remember{
+    margin-bottom: 6%;
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: center;
+   
+    
+}
+.remember input {
+    width: 20px; /* Set the width and height to create a circular shape */
+    height:20px;
+    border-radius: 50%; /* Use border-radius to make it circular */
+    border: 2px solid #dfd9d9; /* Add a border for better visibility */
+    appearance: none; /* Remove default styles */
+    outline: none; /* Remove default outline */
+    cursor: pointer; /* Set cursor to pointer for interaction */
+
+    
+  }
+
+  /* Style the checked state of the checkbox */
+  .remember input:checked {
+    background-color: #b9b46a; /* Add a background color when checked */
+    border-color: #909da8; /* Change border color when checked */
+  }
+  .remember p{
+    margin: 0;
+  }
